@@ -1,11 +1,17 @@
 //your code here
-const imgClasses = ["img1","img2","img3","img4","img5"];
-const images = document.querySelectorAll("img");
-let randomIndex = Math.floor(Math.random()*images.length);
 const resetBtn = document.getElementById('reset');
-const newImg = document.createElement("img");
-newImg.className = imgClasses[randomIndex];
-resetBtn.addEventListener("click",resetHandler);
-function resetHandler(){
-	
-}
+const resetBtn = document.getElementById('verify');
+const div = document.querySelector("div")
+/// render sixth Image randomly
+const newImgElement = document.createElement("img");
+const imgClasses = ["img1","img2","img3","img4","img5"];
+let randomIndex = Math.floor(Math.random()*imageClasses.length);
+const randomImgClass = imgClasses[randomIndex];
+newImgElement.className = randomImgClass;
+div.append(newImgElement)
+
+
+
+
+
+
