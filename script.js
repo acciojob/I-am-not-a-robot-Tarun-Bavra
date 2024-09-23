@@ -11,7 +11,12 @@ let randomIndex = Math.floor(Math.random()*imgClasses.length);
 const randomImgClass = imgClasses[randomIndex];
 newImgElement.className = randomImgClass;
 div.append(newImgElement)
+const imgArr = document.querySelectorAll("img");
+console.log(imgArr)
 //sixth random image generated successfully.
+for (let image of imgArr) {
+	
+}
 
 
 
